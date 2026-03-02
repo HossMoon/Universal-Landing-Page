@@ -1,0 +1,19 @@
+* {
+    outline: red solid 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
