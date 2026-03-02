@@ -1,10 +1,34 @@
+/*
 * {
     outline: red solid 2px;
 }
-
+*/
 body {
+    font-family: Roboto, sans-serif, verdana, arial;
     display: flex;
     flex-direction: column;
+    margin: 0;
+}
+
+.hero-container {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding: 16px 128px 96px 128px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 700;
 }
 
 ul {
@@ -12,8 +36,173 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    font-weight: 200;
+    gap: 32px;
 }
 
 a {
     text-decoration: none;
+    color: #F9FAF8;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.left-hero-content {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 8px;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 1000;
+}
+
+.hero-secondary-text {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.sign-up,
+.sign-up-inverted {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    width: 128px;
+    /* dont want to define a width and 
+    want to rely on padding but its not working*/
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.sign-up-inverted {
+    outline: #F9FAF8 solid 2px;
+    /* weird black border at internal border */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    height: 300px;
+    width: 800px;
+    flex-shrink: 0;
+}
+
+.image-text {
+    position: absolute;
+    font-size: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px;
+    padding-top: 32px;
+}
+
+.info-header-text {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    padding: 32px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    width: 200px;
+}
+
+.card-image {
+    width: 200px;
+    height: 200px;
+    outline: #3882F6 solid 4px;
+    border-radius: 16px;
+}
+
+.info-secondary-text {
+    font-size: 18px;
+    color: gray;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    padding: 128px 300px;/*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+}
+
+.quote-text {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 150;
+    font-style: italic;
+    width: 916.8px;
+    height: 129.6px;
+}
+
+.quote-author {
+    font-size: 18px;
+    text-align: end;
+    font-weight: 500;
+    width: 916.8px;
+}
+
+.sign-up-section {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin: 128px;
+    padding: 48px 96px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-section-main {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sign-up-section-secondary {
+    font-weight: 200;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
 }
